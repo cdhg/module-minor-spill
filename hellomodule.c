@@ -3,8 +3,8 @@
 #include <linux/fs.h>
 MODULE_LICENSE("GPL");
 
-#define maj_no 400
-#define min_no (1 << MINORBITS) - 1
+#define maj_no 400 // Happened to be available on my system but you should check 400/401 are available or you might need another maj_no
+#define min_no (1 << MINORBITS) - 1 // Max possible minor
 
 #define noalloc
 
